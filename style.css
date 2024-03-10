@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.background {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(10%, -50%);
+}
+.background .shape {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:first-child {
+  background-image: linear-gradient(
+    to right top,
+    #5daa09,
+    #00af7c,
+    #00aacb,
+    #009ae9,
+    #8b81d1
+  );
+  left: -80%;
+  top: -80px;
+}
+.shape:last-child {
+  background: rgb(33, 25, 169);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 25, 169, 1) 29%,
+    rgba(165, 11, 99, 1) 80%
+  );
+  right: 180px;
+  bottom: -80px;
+}
+form {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 35px;
+}
+form * {
+  color: white;
+  letter-spacing: 0.5px;
+}
+h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+label {
+  display: block;
+  padding: 10px;
+  position: relative;
+  left: -10px;
+}
+input {
+  height: 30px;
+  background-color: inherit;
+  margin-bottom: 25px;
+}
+.login {
+  width: 320px;
+  height: 40px;
+  color: black;
+  position: relative;
+  top: 20px;
+}
+.fg {
+  position: relative;
+  top: 70px;
+  height: 50px;
+  background-color: inherit;
+}
+.fg:first-child {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.fg:last-child {
+  padding-right: 35px;
+  position: relative;
+  left: 35px;
+  padding-left: 35px;
+}
+.fg:first-child:hover {
+  background-color: #aa7c09;
+  font-size: larger;
+}
+.fg:last-child:hover {
+  background-color: #2213a5;
+  font-size: large;
+}
+.login:hover {
+  background-color: #e63a06;
+  font-size: larger;
+}
+.shape:hover {
+  background: rgb(13, 132, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(13, 132, 36, 0.7456232492997199) 29%,
+    rgba(165, 93, 11, 1) 83%
+  );
+}
